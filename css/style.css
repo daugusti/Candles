@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+} 
+
+
+.intro-image{
+    background-attachment: fixed;
+    background-image: url(../img/img1.jpeg);
+    background-size: cover;
+   height: 800px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.intro-text{
+    background-color: rgb(116, 165, 167);
+    color: beige;
+    font-size: 1.2rem;
+    height: 200px;
+    padding-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -4.5rem;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 66%, 50% 100%, 50% 100%, 0 66%, 0% 43%, 0 0);
+}
+.intro-text h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    
+    
+}
+    
+.packaging-image{
+    background-image: url(../img/img2.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.packaging-text{
+    background-color: rgb(226, 180, 212);
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: rgb(66, 21, 21);
+   
+}
+.packaging-text p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.packaging_text__textbox h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+}
+
+.tutorials-image{
+    align-items: center;
+    background-image: url(../img/img3.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+}
+ .btn{
+    animation-name: Intro;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    border-bottom: 0.2rem solid rgb(233, 218, 190);
+    color: rgb(250, 250, 168);
+    display: inline-block;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px rgb(109, 55, 30), 0 0 rgb(226, 132, 88);
+    transition: all 0.3s;
+    position: relative;/*top-right-bottom-left*/
+    
+}
+@keyframes Intro{
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
+}
+
+ .btn:hover {
+    background-color: rgba(253, 131, 152, 0.438);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+.btn:active{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+.footer{
+    height: 250px;
+    background-color: #122227;
+    color: rgb(213, 226, 238);
+    padding-top: 2rem;
+    font-size: 1.2rem;
+}
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color: rgb(213, 226, 238);
+    text-decoration: none;
+    
+}
+.footer ul li:hover, .footer ul li a:hover{
+   transform: scale(1.2);
+   color: rosybrown;
+   }
